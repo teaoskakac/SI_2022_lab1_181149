@@ -1,5 +1,6 @@
 TEA@DESKTOP-PU39VM8 MINGW64 ~ (master)
 $ git init
+
 TEA@DESKTOP-PU39VM8 MINGW64 ~ (master)
 $ git clone https://github.com/teaoskakac/SI_2022_lab1_181149.git
 Cloning into 'SI_2022_lab1_181149'...
@@ -41,11 +42,12 @@ To https://github.com/teaoskakac/SI_2022_lab1_181149.git
    44e004c..e7d5647  master -> master
  * [new branch]      branch1 -> branch1
  * [new branch]      branch2 -> branch2
+->TUKA GI SINHRONIZIRAM GRANSKITE SO REMOTE REPO
 
 TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
 $ git checkout branch1
 Switched to branch 'branch1'
-
+-> PREFRLUVANJE NA GRANKATA BRANCH1
 TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (branch1)
 $ git commit -m 'Change quantity of item #5'
 [branch1 633c0bd] Change quantity of item #5
@@ -103,5 +105,37 @@ To https://github.com/teaoskakac/SI_2022_lab1_181149.git
    e7d5647..fef10d6  branch2 -> branch2
 
 
+Kaj prviot merge ne postoese konflikt(20.), dodeka kaj drugiot odnosno kaj toj so branch2 se sluci konflikt(21.)
+konfliktot go resiv so:
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master|MERGING)
+$ git commit -a
+[master 3e60fc7] Merge branch 'branch1'
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git pull
+Already up to date.
+
+
+22. ja dodavam tekstualnata datoteka so logovite
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git add 181149.txt
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git commit -m 'Add Docs'
+[master 8c4ceb4] Add Docs
+ 1 file changed, 107 insertions(+)
+ create mode 100644 181149.txt
+
+NA KRAJ GI SINHRONIZIRAM SITE GRANKI SO REMOTE REPO
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git push --all origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.08 KiB | 1.08 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/teaoskakac/SI_2022_lab1_181149.git
+   3e60fc7..8c4ceb4  master -> master
 
 
