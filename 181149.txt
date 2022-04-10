@@ -1,0 +1,107 @@
+TEA@DESKTOP-PU39VM8 MINGW64 ~ (master)
+$ git init
+TEA@DESKTOP-PU39VM8 MINGW64 ~ (master)
+$ git clone https://github.com/teaoskakac/SI_2022_lab1_181149.git
+Cloning into 'SI_2022_lab1_181149'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git commit -m 'Add 5 items to the list'
+[master 8945c98] Add 5 items to the list
+ 1 file changed, 5 insertions(+)
+ create mode 100644 shopping_list.txt
+
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git commit -m 'Add quantities to the items'
+[master e7d5647] Add quantities to the items
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git branch 'branch1'
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git branch 'branch2'
+
+
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git push --all origin
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 618 bytes | 309.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/teaoskakac/SI_2022_lab1_181149.git
+   44e004c..e7d5647  master -> master
+ * [new branch]      branch1 -> branch1
+ * [new branch]      branch2 -> branch2
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git checkout branch1
+Switched to branch 'branch1'
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (branch1)
+$ git commit -m 'Change quantity of item #5'
+[branch1 633c0bd] Change quantity of item #5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (branch1)
+$ git checkout master
+Switched to branch 'master'
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git commit -m 'Change quantity of item #2'
+[master 455596c] Change quantity of item #2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git push --all origin
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 555 bytes | 277.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/teaoskakac/SI_2022_lab1_181149.git
+   e7d5647..633c0bd  branch1 -> branch1
+   e7d5647..455596c  master -> master
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git checkout branch2
+Switched to branch 'branch2'
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (branch2)
+$ git commit -m 'Modify item #4'
+[branch2 6e82db6] Modify item #4
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (branch2)
+$ git commit -m 'Modify item #4 and add item #6'
+[branch2 fef10d6] Modify item #4 and add item #6
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git merge master
+Already up to date.
+
+TEA@DESKTOP-PU39VM8 MINGW64 ~/SI_2022_lab1_181149 (master)
+$ git push --all 
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 643 bytes | 321.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/teaoskakac/SI_2022_lab1_181149.git
+   e7d5647..fef10d6  branch2 -> branch2
+
+
+
+
